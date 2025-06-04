@@ -1,5 +1,5 @@
-Procédure estUnPalindrome(m)
-    Début
+Fonction palindrome(m)
+
         Lire mot
         mot_inverse <- ""
 
@@ -8,10 +8,10 @@ Procédure estUnPalindrome(m)
         FinPour
 
         Si mot = mot_inverse Alors
-            Afficher ("Ce mot" + mot + " est un palindrome")
+            Retourner "Vrai"
         Sinon
-            Afficher ("Ce mot" + mot + " n'est pas un palindrome")
+            Retourner "Faux"
         FinSi
-    Fin     
-Fin de Precédure
+        Retourner mot_inverse
+Fin de Fonction
 
